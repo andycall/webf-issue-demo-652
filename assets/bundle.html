@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style></style>
+  </head>
+  <body>
+    <div id="submit">Submit</div>
+    <script src="./bundle.js"></script>
+    <script>
+      const submit = document.querySelector('#submit');
+      submit.addEventListener('click', async () => {
+        await window.form.submitMap();
+      });
+    </script>
+  </body>
+</html>
